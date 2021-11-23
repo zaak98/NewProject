@@ -3,15 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_course1.xml" value="0.1" />
-        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_course2.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_course3.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_course4.xml" value="0.2390625" />
-        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_course5.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_list.xml" value="0.4" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_image.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_add_photo.xml" value="0.1" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_course1.xml" value="0.2" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_course2.xml" value="0.1" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_course3.xml" value="0.1" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_course4.xml" value="0.1" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_course5.xml" value="0.1" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_image.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_list.xml" value="0.264" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_list2.xml" value="0.264" />
         <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_list_view.xml" value="0.1" />
-        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_thema.xml" value="0.1721014492753623" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_login.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_map.xml" value="0.2390625" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_my_course.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_rating.xml" value="0.264" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_review.xml" value="0.264" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_thema.xml" value="0.2" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/grid_item.xml" value="0.1" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/my_course.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/layout/out_line.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/SAMSUNG/AndroidStudioProjects/Test2/app/src/main/res/xml/my_course.xml" value="0.25364583333333335" />
       </map>
     </option>
   </component>

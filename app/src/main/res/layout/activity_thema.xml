@@ -9,81 +9,74 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="360dp"
-            android:layout_height="match_parent"
-            android:text="테마1"
-            android:textSize="35dp"
-            android:paddingTop="7dp"
-            android:paddingLeft="10dp"/>
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        >
 
         <Button
             android:id="@+id/btn1_move"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:text="테마1"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
 
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="130dp"
         android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="360dp"
-            android:layout_height="match_parent"
-            android:text="테마2"
-            android:textSize="35dp"
-            android:paddingTop="7dp"
-            android:paddingLeft="10dp"/>
 
         <Button
             android:id="@+id/btn2_move"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:text="테마2"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
 
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="130dp"
         android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="360dp"
-            android:layout_height="match_parent"
-            android:text="테마3"
-            android:textSize="35dp"
-            android:paddingTop="7dp"
-            android:paddingLeft="10dp"/>
 
         <Button
             android:id="@+id/btn3_move"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
+            android:layout_height="match_parent"
+            android:text="테마3"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="130dp"
         android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="360dp"
-            android:layout_height="match_parent"
-            android:text="테마4"
-            android:textSize="35dp"
-            android:paddingTop="7dp"
-            android:paddingLeft="10dp"/>
 
         <Button
             android:id="@+id/btn4_move"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:text="테마4"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
 
 
     </LinearLayout>
