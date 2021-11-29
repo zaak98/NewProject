@@ -1,13 +1,17 @@
 package com.example.test2;
 
 public class GridItem {
-    private String m_str;
+    String image;
 
-    public GridItem(String m_str) {
-        this.m_str = m_str;
+    public GridItem(String image) {
+        this.image = image;
     }
 
-    public String getItemString() {
-        return this.m_str;
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String name) {
+        this.image = image;
     }
 }

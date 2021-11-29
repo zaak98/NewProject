@@ -6,26 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".Course2View">
 
-<!--    <GridView-->
-<!--        android:id="@+id/grid_test"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        android:verticalSpacing="30dp"-->
-<!--        android:horizontalSpacing="30dp"-->
-<!--        android:layout_margin="10dp"-->
-<!--        android:numColumns="3"-->
 
-<!--        android:scrollbarStyle="insideInset"-->
-<!--        android:verticalScrollbarPosition="right"-->
-<!--        android:scrollbarSize="10dp"-->
-<!--        android:scrollbarThumbVertical="@color/purple_500"-->
-<!--        android:scrollbarTrackVertical="@color/white"-->
-<!--        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp">
 
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:scrollbarSize="10dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbarThumbVertical="@color/purple_500"
+            android:scrollbarTrackVertical="@color/white"
+            android:verticalScrollbarPosition="right"
+
+            android:verticalSpacing="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
 
     <fragment
         android:id="@+id/map"

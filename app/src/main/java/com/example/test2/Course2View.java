@@ -26,13 +26,8 @@ public class Course2View<adapter> extends AppCompatActivity implements OnMapRead
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-//        m_grid = (GridView)findViewById(R.id.grid_test);
-//        m_gridAdt = new GridAdapter(this );
-//
-//        for (int i = 0 ; i < 100 ; i++ ) {
-//            String strNo = "Num : " + i;
-//            m_gridAdt.setItem(strNo);
-//        }
+        GridView gridView = findViewById(R.id.gridView);
+        GridAdapter adapter = new GridAdapter();
     }
 
 

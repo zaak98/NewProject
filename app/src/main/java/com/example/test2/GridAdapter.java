@@ -5,62 +5,54 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
 public class GridAdapter extends BaseAdapter {
+    private ArrayList<GridItem> items;
+    private Context context;
 
-    private Context m_context;
-    private ArrayList<GridItem> m_array_item;
-
-    public GridAdapter(Context context) {
-        this.m_context = context;
-        this.m_array_item = new ArrayList<GridItem>();
+    public void addItem(GridItem item) {
+        items.add(item);
     }
 
     @Override
     public int getCount() {
-        return this.m_array_item.size();
+        return this.items.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return this.m_array_item.get(position);
+        return this.items.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) m_context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        context = parent.getContext();
+        GridItem gridItem = items.get(position);
+
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = inflater.inflate(R.layout.grid_item, parent, false);
 
-        TextView textView = convertView.findViewById(R.id.item_textview);
-        textView.setText(m_array_item.get(position).getItemString());
+        ImageView imageView = convertView.findViewById(R.id.imageView1);
+        imageView.findViewById(R.id.imageView1);
 
-//        Button button = convertView.findViewById(R.id.item_button);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                String str = getItemString(position);
-//                Toast.makeText(m_context, str, Toast.LENGTH_SHORT).show();
-//            }
-//        });
         return convertView;
     }
 
     public void setItem(String strItem) {
         String strGet = strItem;
-        this.m_array_item.add(new GridItem(strGet));
+        this.items.add(new GridItem(strGet));
     }
 
-    public String getItemString(int position) {
-        return this.m_array_item.get(position).getItemString();
-    }
-
+//    public String getItemString(int position) {
+//        return this.items.get(position).getItemString();
+//    }
 
 }
