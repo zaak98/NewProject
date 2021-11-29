@@ -12,7 +12,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Course5Activity extends AppCompatActivity implements OnMapReadyCallback {
+public class Course4View extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap googleMap;
 
@@ -28,10 +28,10 @@ public class Course5Activity extends AppCompatActivity implements OnMapReadyCall
     @Override
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
-        LatLng latLng = new LatLng(35.159198, 128.098664);
+        LatLng latLng = new LatLng(35.18630, 128.07547);
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         googleMap.moveCamera(CameraUpdateFactory.zoomTo(17));
-        MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("Course5");
+        MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("Course4");
         googleMap.addMarker(markerOptions);
 
     }

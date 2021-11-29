@@ -11,7 +11,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Course3Activity extends AppCompatActivity implements OnMapReadyCallback {
+public class Course3View extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap googleMap;
 

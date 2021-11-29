@@ -14,7 +14,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Course1Activity extends AppCompatActivity implements OnMapReadyCallback {
+public class Course1View extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap googleMap;
     private final int GET_GALLERY_IMAGE = 200;

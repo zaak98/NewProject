@@ -23,9 +23,6 @@
             android:name=".RatingActivity"
             android:exported="false" />
         <activity
-            android:name=".ListActivity2"
-            android:exported="false" />
-        <activity
             android:name=".ImageActivity"
             android:exported="false" />
         <activity
@@ -35,19 +32,19 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Course5Activity"
+            android:name=".Course5View"
             android:exported="false" />
         <activity
-            android:name=".Course4Activity"
+            android:name=".Course4View"
             android:exported="false" />
         <activity
-            android:name=".Course3Activity"
+            android:name=".Course3View"
             android:exported="false" />
         <activity
-            android:name=".Course2Activity"
+            android:name=".Course2View"
             android:exported="false" />
         <activity
-            android:name=".Course1Activity"
+            android:name=".Course1View"
             android:exported="false" />
         <activity
             android:name=".ListActivity"

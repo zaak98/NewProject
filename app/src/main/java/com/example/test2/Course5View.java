@@ -1,7 +1,6 @@
 package com.example.test2;
 
 import android.os.Bundle;
-import android.widget.GridView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,11 +11,9 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Course2Activity<adapter> extends AppCompatActivity implements OnMapReadyCallback {
+public class Course5View extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap googleMap;
-    private GridView m_grid;
-    private GridAdapter m_gridAdt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,29 +22,16 @@ public class Course2Activity<adapter> extends AppCompatActivity implements OnMap
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
-//        m_grid = (GridView)findViewById(R.id.grid_test);
-//        m_gridAdt = new GridAdapter(this );
-//
-//        for (int i = 0 ; i < 100 ; i++ ) {
-//            String strNo = "Num : " + i;
-//            m_gridAdt.setItem(strNo);
-//        }
     }
-
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
-        LatLng latLng = new LatLng(35.179098, 128.099390);
+        LatLng latLng = new LatLng(35.159198, 128.098664);
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         googleMap.moveCamera(CameraUpdateFactory.zoomTo(17));
-        MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("Course2");
+        MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("Course5");
         googleMap.addMarker(markerOptions);
 
     }
-
-
 }
-
-

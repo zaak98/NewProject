@@ -84,19 +84,19 @@ public class ListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position==0){
                     //clicked 코스1
-                    startActivity(new Intent(ListActivity.this, Course1Activity.class));
+                    startActivity(new Intent(ListActivity.this, Course1View.class));
                 }else if(position==1){
                     //clicked 코스2
                     startActivity(new Intent(ListActivity.this, RatingActivity.class));
                 }else if(position==2){
                     //clicked 코스3
-                    startActivity(new Intent(ListActivity.this, Course3Activity.class));
+                    startActivity(new Intent(ListActivity.this, Course3View.class));
                 }else if(position==3){
                     //clicked 코스4
-                    startActivity(new Intent(ListActivity.this, Course4Activity.class));
+                    startActivity(new Intent(ListActivity.this, Course4View.class));
                 }else if(position==4){
                     //clicked 코스5
-                    startActivity(new Intent(ListActivity.this, Course5Activity.class));
+                    startActivity(new Intent(ListActivity.this, Course5View.class));
                 }else{
                     //clicked ImageView
                     startActivity(new Intent(ListActivity.this, ImageActivity.class));
