@@ -1,9 +1,14 @@
 package com.example.test2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.GridView;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -12,28 +17,66 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Course2View<adapter> extends AppCompatActivity implements OnMapReadyCallback {
+public class Course2View extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap googleMap;
-    private GridView m_grid;
-    private GridAdapter m_gridAdt;
+    Button up_rv;
+    Button up_photo;
+    GridView gridview = null;
+    GridAdapter adapter = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_map);
+        setContentView(R.layout.view_course2);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        GridView gridView = findViewById(R.id.gridView);
-        GridAdapter adapter = new GridAdapter();
+        final TextView textView = (TextView)findViewById(R.id.course_name2);
+        RatingBar rb = (RatingBar)findViewById(R.id.ratingBar2);
+
+        up_rv = (Button)findViewById(R.id.up_rv);
+        up_rv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Course2View.this, ReviewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        up_photo = (Button)findViewById(R.id.up_photo);
+        up_photo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Course2View.this, ImageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        gridview = (GridView) findViewById(R.id.gridView);
+        adapter = new GridAdapter();
+
+        //Adapter 안에 아이템의 정보 담기
+        adapter.addItem(new GridItem(R.drawable.ic_image));
+        adapter.addItem(new GridItem(R.drawable.ic_image));
+        adapter.addItem(new GridItem(R.drawable.ic_image));
+        adapter.addItem(new GridItem(R.drawable.ic_image));
+        adapter.addItem(new GridItem(R.drawable.ic_image));
+        adapter.addItem(new GridItem(R.drawable.ic_image));
+        adapter.addItem(new GridItem(R.drawable.ic_image));
+        adapter.addItem(new GridItem(R.drawable.ic_image));
+
+        //리스트뷰에 Adapter 설정
+        gridview.setAdapter(adapter);
+
     }
 
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
+        googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         LatLng latLng = new LatLng(35.179098, 128.099390);
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         googleMap.moveCamera(CameraUpdateFactory.zoomTo(17));

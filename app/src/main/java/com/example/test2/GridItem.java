@@ -1,17 +1,17 @@
 package com.example.test2;
 
 public class GridItem {
-    String image;
+    int resId;
 
-    public GridItem(String image) {
-        this.image = image;
+    public GridItem(int resId) {
+        this.resId = resId;
     }
 
-    public String getImage() {
-        return image;
+    public int getResId() {
+        return resId;
     }
 
-    public void setImage(String name) {
-        this.image = image;
+    public void setResId(int resId) {
+        this.resId = resId;
     }
 }

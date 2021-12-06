@@ -1,24 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Course1View">
+    android:layout_height="wrap_content"
+    tools:context=".Course1View"
+    android:orientation="vertical">
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="370dp"
-        tools:ignore="MissingConstraints" />
-    <ImageView
-        android:id="@+id/imageView"
+        android:layout_height="290dp"
+        app:layout_constraintBottom_toTopOf="@+id/course_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitCenter"
-        android:layout_gravity="center_vertical|center_horizontal"
-        app:srcCompat="@drawable/ic_image" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#00BCD4">
 
+        <TextView
+            android:id="@+id/course_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="course1"
+            android:textSize="35dp"
+            android:gravity="center_horizontal"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:rating="1"
+                android:stepSize="0.5"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="1.0"
+                android:id="@+id/rating_view"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right">
+
+            <Button
+                android:id="@+id/up_rate"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="별점등록"
+                />
+            <Button
+                android:id="@+id/up_photo"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="사진등록"
+                />
+            <Button
+                android:id="@+id/up_rv"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="후기등록"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="100dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:paddingBottom="5dp"
+        android:verticalSpacing="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+</LinearLayout>

@@ -13,4 +13,12 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <!-- 다이얼 로그의 기본 테마...-->
+        <item name="android:windowNoTitle">false</item>
+        <!-- 타이틀바가  true면 없고 false면 있다.,.. -->
+
+        <item name="android:windowIsFloating">false</item>
+        <!-- 화면 범위 설정 true는 전체 화면 false면 아니다.. -->
+    </style>
 </resources>

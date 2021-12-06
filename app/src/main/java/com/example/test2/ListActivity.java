@@ -87,7 +87,7 @@ public class ListActivity extends AppCompatActivity {
                     startActivity(new Intent(ListActivity.this, Course1View.class));
                 }else if(position==1){
                     //clicked 코스2
-                    startActivity(new Intent(ListActivity.this, RatingActivity.class));
+                    startActivity(new Intent(ListActivity.this, Course2View.class));
                 }else if(position==2){
                     //clicked 코스3
                     startActivity(new Intent(ListActivity.this, Course3View.class));
