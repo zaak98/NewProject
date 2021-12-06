@@ -72,8 +72,6 @@ public class ListActivity extends AppCompatActivity {
         list.add("코스18");
         list.add("코스19");
         list.add("코스20");
-        list.add("ImageView");
-
 
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1,list);
