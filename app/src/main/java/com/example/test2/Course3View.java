@@ -75,7 +75,7 @@ public class Course3View extends AppCompatActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
-        LatLng latLng = new LatLng(35.20394, 128.12724);
+        LatLng latLng = new LatLng(35.18661810025929, 128.07542830617484);
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         googleMap.moveCamera(CameraUpdateFactory.zoomTo(17));
         MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("Course3");
