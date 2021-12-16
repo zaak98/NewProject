@@ -26,7 +26,7 @@
             android:id="@+id/course_name4"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-            android:text="course4"
+            android:text="충무공동 가람울공원"
             android:textSize="35dp"
             android:gravity="center_horizontal" />
 
