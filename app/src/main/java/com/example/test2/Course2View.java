@@ -77,7 +77,7 @@ public class Course2View extends FragmentActivity implements OnMapReadyCallback 
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        LatLng latLng = new LatLng(35.179098, 128.099390);
+        LatLng latLng = new LatLng(35.20443881141165, 128.12727387889777);
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         googleMap.moveCamera(CameraUpdateFactory.zoomTo(17));
         MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("Course2");
